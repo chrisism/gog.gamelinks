@@ -104,21 +104,29 @@ c = conn.cursor()
 #19	2231	originalSortingTitle
 #20	2242	sortingTitle
 
-#	releaseKey	gamePieceTypeId	userId	value
-#1	gog_1146738698	1	50788186949939540	{"myRating":null}
-#2	gog_1434021265	1	50788186949939540	{"myRating":null}
-#3	gog_1146738698	3	50788186949939540	{"all":0,"unlocked":0}
+q = 'SELECT \
+        g.releaseKey \
+        ,gpt.value as title \
+        ,gps.value as summary \
+        ,gpm.value as meta \
+        ,gpmd.value as media \
+        ,gpi.value as images \
+     FROM GameLinks AS g \
+        LEFT JOIN GamePieces AS gpt  ON g.releaseKey = gpt.releaseKey  AND gpt.gamePieceTypeId = 10 \
+        LEFT JOIN GamePieces AS gps  ON g.releaseKey = gps.releaseKey  AND gps.gamePieceTypeId = 13 \
+        LEFT JOIN GamePieces AS gpm  ON g.releaseKey = gpm.releaseKey  AND gpm.gamePieceTypeId = 12 \
+        LEFT JOIN GamePieces AS gpmd ON g.releaseKey = gpmd.releaseKey AND gpmd.gamePieceTypeId = 7 \
+        LEFT JOIN GamePieces AS gpi  ON g.releaseKey = gpi.releaseKey  AND gpi.gamePieceTypeId = 8'
 
-#releaseKey	userId	gameId
-#1	gog_1146738698	50788186949939540	
-#2	gog_1434021265	50788186949939540	
-#3	gog_1180040534	50788186949939540	
-#4	gog_1207665713	50788186949939540	
-
-q = 'SELECT g.releaseKey, gpt.value, gpm.value \
-    FROM GameLinks AS g \
-        LEFT JOIN GamePieces AS gpt ON g.releaseKey = gpt.releaseKey AND gpt.gamePieceTypeId = 14 \
-        LEFT JOIN GamePieces AS gpm ON g.releaseKey = gpm.releaseKey AND gpm.gamePieceTypeId = 12'
-
+games = []
 for row in c.execute(q):
-    print(row)
+    game = Game(row)
+    games.append(game)
+
+class Game(object):
+
+    def __init__(self, data_row):
+        self.data = {}
+        self.data['id'] = data_row[0]
+        self.data['title'] = data_row[1]['title']
+        self.data['summary'] = data_row[2]['summary']
