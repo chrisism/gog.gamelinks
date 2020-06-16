@@ -1,0 +1,436 @@
+2020-06-16 21:21:16,790 - gog_links - DEBUG - connecting to db@/home/cwjungerius/projects/assets/galaxy-2.0.db
+2020-06-16 21:21:17,098 - gog_links - INFO - loaded 214 games
+2020-06-16 21:21:17,098 - gog_links - INFO - Creating NFO files for the games
+2020-06-16 21:21:17,106 - gog_links - DEBUG -   Created NFO file for game Hearthstone®
+2020-06-16 21:21:17,109 - gog_links - DEBUG -   Created NFO file for game Heroes of the Storm®
+2020-06-16 21:21:17,112 - gog_links - DEBUG -   Created NFO file for game StarCraft® Remastered
+2020-06-16 21:21:17,115 - gog_links - DEBUG -   Created NFO file for game Diablo® III
+2020-06-16 21:21:17,116 - gog_links - DEBUG -   Created NFO file for game Call of Duty: Modern Warfare
+2020-06-16 21:21:17,118 - gog_links - DEBUG -   Created NFO file for game StarCraft® II
+2020-06-16 21:21:17,120 - gog_links - DEBUG -   Created NFO file for game Grand Theft Auto V
+2020-06-16 21:21:17,122 - gog_links - DEBUG -   Created NFO file for game Grand Theft Auto V
+2020-06-16 21:21:17,123 - gog_links - DEBUG -   Created NFO file for game World of Warcraft®
+2020-06-16 21:21:17,125 - gog_links - DEBUG -   Created NFO file for game Steep
+2020-06-16 21:21:17,128 - gog_links - DEBUG -   Created NFO file for game Slime Rancher
+2020-06-16 21:21:17,130 - gog_links - DEBUG -   Created NFO file for game Braveland
+2020-06-16 21:21:17,132 - gog_links - DEBUG -   Created NFO file for game For Honor
+2020-06-16 21:21:17,133 - gog_links - DEBUG -   Created NFO file for game The Ship: Murder Party Tutorial
+2020-06-16 21:21:17,135 - gog_links - DEBUG -   Created NFO file for game Carmageddon TDR 2000
+2020-06-16 21:21:17,138 - gog_links - DEBUG -   Created NFO file for game GOD EATER RESURRECTION
+2020-06-16 21:21:17,140 - gog_links - DEBUG -   Created NFO file for game King's Bounty: Crossworlds
+2020-06-16 21:21:17,142 - gog_links - DEBUG -   Created NFO file for game Batman™ Arkham Asylum Game of the Year Edition
+2020-06-16 21:21:17,144 - gog_links - DEBUG -   Created NFO file for game Darksiders: Warmastered Edition
+2020-06-16 21:21:17,146 - gog_links - DEBUG -   Created NFO file for game Dark Souls III
+2020-06-16 21:21:17,148 - gog_links - DEBUG -   Created NFO file for game Sid Meier's Civilization VI
+2020-06-16 21:21:17,149 - gog_links - DEBUG -   Created NFO file for game DISTRAINT: Deluxe Edition
+2020-06-16 21:21:17,150 - gog_links - DEBUG -   Created NFO file for game MX vs. ATV Reflex
+2020-06-16 21:21:17,152 - gog_links - DEBUG -   Created NFO file for game Unreal Gold
+2020-06-16 21:21:17,153 - gog_links - DEBUG -   Created NFO file for game For Honor
+2020-06-16 21:21:17,155 - gog_links - DEBUG -   Created NFO file for game The Witcher: Enhanced Edition
+2020-06-16 21:21:17,157 - gog_links - DEBUG -   Created NFO file for game 12 is Better than 6
+2020-06-16 21:21:17,158 - gog_links - DEBUG -   Created NFO file for game Counter-Strike: Global Offensive
+2020-06-16 21:21:17,160 - gog_links - DEBUG -   Created NFO file for game Dying Light
+2020-06-16 21:21:17,162 - gog_links - DEBUG -   Created NFO file for game Dead by Daylight
+2020-06-16 21:21:17,163 - gog_links - DEBUG -   Created NFO file for game Killing Floor Mod: Defence Alliance 2
+2020-06-16 21:21:17,165 - gog_links - DEBUG -   Created NFO file for game Insurgency
+2020-06-16 21:21:17,168 - gog_links - DEBUG -   Created NFO file for game Last Day of June
+2020-06-16 21:21:17,170 - gog_links - DEBUG -   Created NFO file for game Mutant Year Zero: Road to Eden
+2020-06-16 21:21:17,171 - gog_links - DEBUG -   Created NFO file for game Beneath a Steel Sky
+2020-06-16 21:21:17,172 - gog_links - DEBUG -   Created NFO file for game Laser League
+2020-06-16 21:21:17,174 - gog_links - DEBUG -   Created NFO file for game Guns of Icarus Online
+2020-06-16 21:21:17,175 - gog_links - DEBUG -   Created NFO file for game God Eater 2 - Rage Burst
+2020-06-16 21:21:17,177 - gog_links - DEBUG -   Created NFO file for game Dota 2
+2020-06-16 21:21:17,179 - gog_links - DEBUG -   Created NFO file for game Outlast
+2020-06-16 21:21:17,180 - gog_links - DEBUG -   Created NFO file for game State of Decay: Year-One Survival Edition
+2020-06-16 21:21:17,182 - gog_links - DEBUG -   Created NFO file for game Rising Storm/Red Orchestra 2 Multiplayer
+2020-06-16 21:21:17,183 - gog_links - DEBUG -   Created NFO file for game Kingdom: Classic
+2020-06-16 21:21:17,184 - gog_links - DEBUG -   Created NFO file for game Pinball Arcade
+2020-06-16 21:21:17,186 - gog_links - DEBUG -   Created NFO file for game Galactic Civilizations II: Endless Universe
+2020-06-16 21:21:17,188 - gog_links - DEBUG -   Created NFO file for game Final Fantasy VII Remake
+2020-06-16 21:21:17,189 - gog_links - DEBUG -   Created NFO file for game Fortnite
+2020-06-16 21:21:17,190 - gog_links - DEBUG -   Created NFO file for game Grand Theft Auto V
+2020-06-16 21:21:17,192 - gog_links - DEBUG -   Created NFO file for game SOMA
+2020-06-16 21:21:17,193 - gog_links - DEBUG -   Created NFO file for game Contagion
+2020-06-16 21:21:17,195 - gog_links - DEBUG -   Created NFO file for game Warhammer 40,000: Space Marine
+2020-06-16 21:21:17,197 - gog_links - DEBUG -   Created NFO file for game Splasher
+2020-06-16 21:21:17,198 - gog_links - DEBUG -   Created NFO file for game FIFA 19
+2020-06-16 21:21:17,200 - gog_links - DEBUG -   Created NFO file for game Wasteland 2
+2020-06-16 21:21:17,202 - gog_links - DEBUG -   Created NFO file for game Xenonauts
+2020-06-16 21:21:17,203 - gog_links - DEBUG -   Created NFO file for game Toonstruck
+2020-06-16 21:21:17,205 - gog_links - DEBUG -   Created NFO file for game Star Wars: X-Wing Alliance
+2020-06-16 21:21:17,207 - gog_links - DEBUG -   Created NFO file for game Subnautica
+2020-06-16 21:21:17,208 - gog_links - DEBUG -   Created NFO file for game League of Legends
+2020-06-16 21:21:17,210 - gog_links - DEBUG -   Created NFO file for game Hearthstone
+2020-06-16 21:21:17,211 - gog_links - DEBUG -   Created NFO file for game Mount & Blade II: Bannerlord
+2020-06-16 21:21:17,212 - gog_links - DEBUG -   Created NFO file for game Minecraft
+2020-06-16 21:21:17,214 - gog_links - DEBUG -   Created NFO file for game Fortnite
+2020-06-16 21:21:17,216 - gog_links - DEBUG -   Created NFO file for game Oxenfree
+2020-06-16 21:21:17,218 - gog_links - DEBUG -   Created NFO file for game Grand Theft Auto: San Andreas
+2020-06-16 21:21:17,219 - gog_links - DEBUG -   Created NFO file for game Red Faction: Guerrilla Re-Mars-tered
+2020-06-16 21:21:17,221 - gog_links - DEBUG -   Created NFO file for game Rocket League
+2020-06-16 21:21:17,223 - gog_links - DEBUG -   Created NFO file for game Wasteland 2 Director's Cut
+2020-06-16 21:21:17,224 - gog_links - DEBUG -   Created NFO file for game Full Throttle Remastered
+2020-06-16 21:21:17,226 - gog_links - DEBUG -   Created NFO file for game Shadow Warrior 2
+2020-06-16 21:21:17,229 - gog_links - DEBUG -   Created NFO file for game Ziggurat
+2020-06-16 21:21:17,231 - gog_links - DEBUG -   Created NFO file for game Everspace
+2020-06-16 21:21:17,232 - gog_links - DEBUG -   Created NFO file for game Overwatch
+2020-06-16 21:21:17,234 - gog_links - DEBUG -   Created NFO file for game PLAYERUNKNOWN'S BATTLEGROUNDS
+2020-06-16 21:21:17,240 - gog_links - DEBUG -   Created NFO file for game World of Warcraft
+2020-06-16 21:21:17,241 - gog_links - DEBUG -   Created NFO file for game Tom Clancy's Rainbow Six: Siege
+2020-06-16 21:21:17,243 - gog_links - DEBUG -   Created NFO file for game Age of Wonders III
+2020-06-16 21:21:17,246 - gog_links - DEBUG -   Created NFO file for game BLACKHOLE
+2020-06-16 21:21:17,248 - gog_links - DEBUG -   Created NFO file for game Homefront: The Revolution
+2020-06-16 21:21:17,249 - gog_links - DEBUG -   Created NFO file for game Millennium: A New Hope
+2020-06-16 21:21:17,251 - gog_links - DEBUG -   Created NFO file for game Layers of Fear
+2020-06-16 21:21:17,253 - gog_links - DEBUG -   Created NFO file for game How to Survive
+2020-06-16 21:21:17,256 - gog_links - DEBUG -   Created NFO file for game F1 2017
+2020-06-16 21:21:17,258 - gog_links - DEBUG -   Created NFO file for game Star Wars: X-Wing - Special Edition
+2020-06-16 21:21:17,260 - gog_links - DEBUG -   Created NFO file for game The Flame in the Flood
+2020-06-16 21:21:17,262 - gog_links - DEBUG -   Created NFO file for game Amnesia: The Dark Descent
+2020-06-16 21:21:17,264 - gog_links - DEBUG -   Created NFO file for game Grid 2
+2020-06-16 21:21:17,267 - gog_links - DEBUG -   Created NFO file for game Freespace 2
+2020-06-16 21:21:17,268 - gog_links - DEBUG -   Created NFO file for game Lego The Hobbit
+2020-06-16 21:21:17,270 - gog_links - DEBUG -   Created NFO file for game Borderlands: The Pre-Sequel
+2020-06-16 21:21:17,271 - gog_links - DEBUG -   Created NFO file for game Lost Castle
+2020-06-16 21:21:17,273 - gog_links - DEBUG -   Created NFO file for game Red Faction: Armageddon
+2020-06-16 21:21:17,276 - gog_links - DEBUG -   Created NFO file for game Tekken 7
+2020-06-16 21:21:17,279 - gog_links - DEBUG -   Created NFO file for game Headsnatchers
+2020-06-16 21:21:17,280 - gog_links - DEBUG -   Created NFO file for game Star Wars: TIE Fighter - Special Edition
+2020-06-16 21:21:17,282 - gog_links - DEBUG -   Created NFO file for game Batman™ Arkham Knight
+2020-06-16 21:21:17,284 - gog_links - DEBUG -   Created NFO file for game Lara Croft GO
+2020-06-16 21:21:17,286 - gog_links - DEBUG -   Created NFO file for game Yet Another Zombie Defense HD
+2020-06-16 21:21:17,287 - gog_links - DEBUG -   Created NFO file for game Glass Masquerade
+2020-06-16 21:21:17,289 - gog_links - DEBUG -   Created NFO file for game Star Wars: X-Wing vs. TIE Fighter - Balance of Power
+2020-06-16 21:21:17,291 - gog_links - DEBUG -   Created NFO file for game Shadow Warrior
+2020-06-16 21:21:17,292 - gog_links - DEBUG -   Created NFO file for game Dead Rising 2: Off the Record
+2020-06-16 21:21:17,294 - gog_links - DEBUG -   Created NFO file for game Outlast
+2020-06-16 21:21:17,297 - gog_links - DEBUG -   Created NFO file for game AER: Memories of Old
+2020-06-16 21:21:17,299 - gog_links - DEBUG -   Created NFO file for game Mad Max
+2020-06-16 21:21:17,300 - gog_links - DEBUG -   Created NFO file for game LEGO The Lord of the Rings
+2020-06-16 21:21:17,302 - gog_links - DEBUG -   Created NFO file for game Dead Rising
+2020-06-16 21:21:17,303 - gog_links - DEBUG -   Created NFO file for game Borderlands 2
+2020-06-16 21:21:17,308 - gog_links - DEBUG -   Created NFO file for game Left 4 Dead 2
+2020-06-16 21:21:17,309 - gog_links - DEBUG -   Created NFO file for game Total War: Warhammer
+2020-06-16 21:21:17,312 - gog_links - DEBUG -   Created NFO file for game King's Bounty: The Legend
+2020-06-16 21:21:17,313 - gog_links - DEBUG -   Created NFO file for game Warface
+2020-06-16 21:21:17,315 - gog_links - DEBUG -   Created NFO file for game Quake III Arena
+2020-06-16 21:21:17,317 - gog_links - DEBUG -   Created NFO file for game Call of Duty: WWII
+2020-06-16 21:21:17,319 - gog_links - DEBUG -   Created NFO file for game Killing Floor
+2020-06-16 21:21:17,320 - gog_links - DEBUG -   Created NFO file for game Totally Accurate Battle Simulator
+2020-06-16 21:21:17,322 - gog_links - DEBUG -   Created NFO file for game The Tiny Bang Story
+2020-06-16 21:21:17,323 - gog_links - DEBUG -   Created NFO file for game Assassin's Creed® II
+2020-06-16 21:21:17,325 - gog_links - DEBUG -   Created NFO file for game DiRT Rally
+2020-06-16 21:21:17,327 - gog_links - DEBUG -   Created NFO file for game Whispering Willows
+2020-06-16 21:21:17,329 - gog_links - DEBUG -   Created NFO file for game Viscera Cleanup Detail: Shadow Warrior
+2020-06-16 21:21:17,331 - gog_links - DEBUG -   Created NFO file for game Payday 2
+2020-06-16 21:21:17,332 - gog_links - DEBUG -   Created NFO file for game World War Z
+2020-06-16 21:21:17,335 - gog_links - DEBUG -   Created NFO file for game Metro: 2033 Redux
+2020-06-16 21:21:17,336 - gog_links - DEBUG -   Created NFO file for game Tomb Raider
+2020-06-16 21:21:17,338 - gog_links - DEBUG -   Created NFO file for game Aviary Attorney
+2020-06-16 21:21:17,339 - gog_links - DEBUG -   Created NFO file for game Warhammer: Vermintide 2
+2020-06-16 21:21:17,341 - gog_links - DEBUG -   Created NFO file for game Rayman Legends
+2020-06-16 21:21:17,342 - gog_links - DEBUG -   Created NFO file for game Subterrain
+2020-06-16 21:21:17,344 - gog_links - DEBUG -   Created NFO file for game Guns of Icarus Alliance
+2020-06-16 21:21:17,346 - gog_links - DEBUG -   Created NFO file for game Spec Ops: The Line
+2020-06-16 21:21:17,348 - gog_links - DEBUG -   Created NFO file for game A Story About My Uncle
+2020-06-16 21:21:17,349 - gog_links - DEBUG -   Created NFO file for game Darksiders
+2020-06-16 21:21:17,351 - gog_links - DEBUG -   Created NFO file for game Rebel Galaxy
+2020-06-16 21:21:17,353 - gog_links - DEBUG -   Created NFO file for game Torchlight
+2020-06-16 21:21:17,355 - gog_links - DEBUG -   Created NFO file for game Full Spectrum Warrior
+2020-06-16 21:21:17,359 - gog_links - DEBUG -   Created NFO file for game Oddworld: Abe's Oddysee
+2020-06-16 21:21:17,361 - gog_links - DEBUG -   Created NFO file for game Motorsport Manager
+2020-06-16 21:21:17,364 - gog_links - DEBUG -   Created NFO file for game Hacknet
+2020-06-16 21:21:17,365 - gog_links - DEBUG -   Created NFO file for game Fortified
+2020-06-16 21:21:17,378 - gog_links - DEBUG -   Created NFO file for game Outlast II
+2020-06-16 21:21:17,380 - gog_links - DEBUG -   Created NFO file for game Company of Heroes 2
+2020-06-16 21:21:17,382 - gog_links - DEBUG -   Created NFO file for game For Honor - Public Test
+2020-06-16 21:21:17,383 - gog_links - DEBUG -   Created NFO file for game Warhammer: Vermintide 2 - Closed Test
+2020-06-16 21:21:17,385 - gog_links - DEBUG -   Created NFO file for game Quake III: Team Arena
+2020-06-16 21:21:17,386 - gog_links - DEBUG -   Created NFO file for game Call to Arms
+2020-06-16 21:21:17,388 - gog_links - DEBUG -   Created NFO file for game Left 4 Dead
+2020-06-16 21:21:17,389 - gog_links - DEBUG -   Created NFO file for game Eastside Hockey Manager
+2020-06-16 21:21:17,391 - gog_links - DEBUG -   Created NFO file for game Grand Theft Auto: San Andreas
+2020-06-16 21:21:17,393 - gog_links - DEBUG -   Created NFO file for game Amnesia: A Machine for Pigs
+2020-06-16 21:21:17,394 - gog_links - DEBUG -   Created NFO file for game Rising Storm 2: Vietnam
+2020-06-16 21:21:17,397 - gog_links - DEBUG -   Created NFO file for game Kingdom Come: Deliverance
+2020-06-16 21:21:17,399 - gog_links - DEBUG -   Created NFO file for game Killing Floor 2
+2020-06-16 21:21:17,401 - gog_links - DEBUG -   Created NFO file for game The Ship: Single Player
+2020-06-16 21:21:17,404 - gog_links - DEBUG -   Created NFO file for game Dishonored
+2020-06-16 21:21:17,405 - gog_links - DEBUG -   Created NFO file for game Day of Infamy
+2020-06-16 21:21:17,407 - gog_links - DEBUG -   Created NFO file for game AI War: Fleet Command
+2020-06-16 21:21:17,409 - gog_links - DEBUG -   Created NFO file for game Darksiders II: Deathinitive Edition
+2020-06-16 21:21:17,410 - gog_links - DEBUG -   Created NFO file for game Sega Bass Fishing
+2020-06-16 21:21:17,412 - gog_links - DEBUG -   Created NFO file for game HackyZack
+2020-06-16 21:21:17,414 - gog_links - DEBUG -   Created NFO file for game Overcooked
+2020-06-16 21:21:17,416 - gog_links - DEBUG -   Created NFO file for game Sniper Elite III
+2020-06-16 21:21:17,417 - gog_links - DEBUG -   Created NFO file for game Super Blood Hockey
+2020-06-16 21:21:17,418 - gog_links - DEBUG -   Created NFO file for game Full Spectrum Warrior: Ten Hammers
+2020-06-16 21:21:17,421 - gog_links - DEBUG -   Created NFO file for game Batman™ Arkham City - Game of the Year Edition
+2020-06-16 21:21:17,423 - gog_links - DEBUG -   Created NFO file for game The Ship: Murder Party
+2020-06-16 21:21:17,425 - gog_links - DEBUG -   Created NFO file for game Shadowrun Returns
+2020-06-16 21:21:17,426 - gog_links - DEBUG -   Created NFO file for game Frontlines: Fuel of War
+2020-06-16 21:21:17,428 - gog_links - DEBUG -   Created NFO file for game Call of Duty: WWII
+2020-06-16 21:21:17,429 - gog_links - DEBUG -   Created NFO file for game The Darkness II
+2020-06-16 21:21:17,431 - gog_links - DEBUG -   Created NFO file for game Overgrowth
+2020-06-16 21:21:17,433 - gog_links - DEBUG -   Created NFO file for game Assassin's Creed® IV Black Flag
+2020-06-16 21:21:17,435 - gog_links - DEBUG -   Created NFO file for game Assassin's Creed® IV Black Flag
+2020-06-16 21:21:17,437 - gog_links - DEBUG -   Created NFO file for game Enter the Gungeon
+2020-06-16 21:21:17,439 - gog_links - DEBUG -   Created NFO file for game Alien: Isolation
+2020-06-16 21:21:17,441 - gog_links - DEBUG -   Created NFO file for game Quake Champions
+2020-06-16 21:21:17,443 - gog_links - DEBUG -   Created NFO file for game Titan Quest Anniversary Edition
+2020-06-16 21:21:17,444 - gog_links - DEBUG -   Created NFO file for game Call of Juarez: Gunslinger
+2020-06-16 21:21:17,446 - gog_links - DEBUG -   Created NFO file for game Slay.one
+2020-06-16 21:21:17,447 - gog_links - DEBUG -   Created NFO file for game King's Bounty: Armored Princess
+2020-06-16 21:21:17,448 - gog_links - DEBUG -   Created NFO file for game Foxhole
+2020-06-16 21:21:17,450 - gog_links - DEBUG -   Created NFO file for game THE KING OF FIGHTERS 2002
+2020-06-16 21:21:17,452 - gog_links - DEBUG -   Created NFO file for game IL-2 Sturmovik: 1946
+2020-06-16 21:21:17,453 - gog_links - DEBUG -   Created NFO file for game Crusader Kings II
+2020-06-16 21:21:17,455 - gog_links - DEBUG -   Created NFO file for game Red Faction: Guerrilla - Steam Edition
+2020-06-16 21:21:17,456 - gog_links - DEBUG -   Created NFO file for game GWENT: The Witcher Card Game
+2020-06-16 21:21:17,458 - gog_links - DEBUG -   Created NFO file for game This War of Mine
+2020-06-16 21:21:17,460 - gog_links - DEBUG -   Created NFO file for game Deus Ex: Mankind Divided
+2020-06-16 21:21:17,461 - gog_links - DEBUG -   Created NFO file for game Metro 2033
+2020-06-16 21:21:17,463 - gog_links - DEBUG -   Created NFO file for game Dead Rising 2
+2020-06-16 21:21:17,464 - gog_links - DEBUG -   Created NFO file for game Holy Potatoes! We're in Space?!
+2020-06-16 21:21:17,466 - gog_links - DEBUG -   Created NFO file for game Argo
+2020-06-16 21:21:17,468 - gog_links - DEBUG -   Created NFO file for game Animal Crossing: New Horizons
+2020-06-16 21:21:17,469 - gog_links - DEBUG -   Created NFO file for game FIFA 20
+2020-06-16 21:21:17,470 - gog_links - DEBUG -   Created NFO file for game Teamfight Tactics
+2020-06-16 21:21:17,472 - gog_links - DEBUG -   Created NFO file for game Apex Legends
+2020-06-16 21:21:17,474 - gog_links - DEBUG -   Created NFO file for game Resident Evil 3
+2020-06-16 21:21:17,475 - gog_links - DEBUG -   Created NFO file for game Half-Life: Alyx
+2020-06-16 21:21:17,476 - gog_links - DEBUG -   Created NFO file for game SAMURAI SHODOWN NEOGEO COLLECTION
+2020-06-16 21:21:17,477 - gog_links - DEBUG -   Created NFO file for game ARK: Survival Evolved
+2020-06-16 21:21:17,480 - gog_links - DEBUG -   Created NFO file for game Mafia III
+2020-06-16 21:21:17,481 - gog_links - DEBUG -   Created NFO file for game Geneshift: Battle Royale Turbo
+2020-06-16 21:21:17,483 - gog_links - DEBUG -   Created NFO file for game LEGO Ninjago Movie Video Game
+2020-06-16 21:21:17,485 - gog_links - DEBUG -   Created NFO file for game Hitman: Absolution
+2020-06-16 21:21:17,486 - gog_links - DEBUG -   Created NFO file for game Turok
+2020-06-16 21:21:17,488 - gog_links - DEBUG -   Created NFO file for game Planet Coaster
+2020-06-16 21:21:17,489 - gog_links - DEBUG -   Created NFO file for game Niffelheim
+2020-06-16 21:21:17,491 - gog_links - DEBUG -   Created NFO file for game My Friend Pedro
+2020-06-16 21:21:17,493 - gog_links - DEBUG -   Created NFO file for game F1 2019
+2020-06-16 21:21:17,495 - gog_links - DEBUG -   Created NFO file for game Etherborn
+2020-06-16 21:21:17,497 - gog_links - DEBUG -   Created NFO file for game Death's Gambit
+2020-06-16 21:21:17,499 - gog_links - DEBUG -   Created NFO file for game Battle Chasers: Nightwar
+2020-06-16 21:21:17,501 - gog_links - DEBUG -   Created NFO file for game 198X
+2020-06-16 21:21:17,503 - gog_links - DEBUG -   Created NFO file for game Snake Pass
+2020-06-16 21:21:17,503 - gog_links - INFO - NFO files done
+2020-06-16 21:21:17,503 - gog_links - INFO - Creating lnks for the games
+2020-06-16 21:21:17,503 - gog_links - INFO - Creating lnks complete
+2020-06-16 21:21:17,504 - gog_links - INFO - Adding lnks to shield
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Hearthstone.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Heroes of the Storm.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/StarCraft Remastered.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Diablo 3.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Call of Duty Modern Warfare.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/StarCraft 2.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grand Theft Auto 5.lnk not found, skipping
+2020-06-16 21:21:17,504 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grand Theft Auto 5.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/World of Warcraft.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Steep.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Slime Rancher.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Braveland.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/For Honor.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Ship Murder Party Tutorial.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Carmageddon TDR 2000.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/GOD EATER RESURRECTION.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Kings Bounty Crossworlds.lnk not found, skipping
+2020-06-16 21:21:17,505 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Batman Arkham Asylum Game of the Year Edition.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Darksiders.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dark Souls 3.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Sid Meiers Civilization 6.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/DISTRAINT Deluxe Edition.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/MX vs ATV Reflex.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Unreal Gold.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/For Honor.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Witcher Enhanced Edition.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/12 is Better than 6.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/CounterStrike Global Offensive.lnk not found, skipping
+2020-06-16 21:21:17,506 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dying Light.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dead by Daylight.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Killing Floor Mod Defence Alliance 2.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Insurgency.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Last Day of June.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Mutant Year Zero Road to Eden.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Beneath a Steel Sky.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Laser League.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Guns of Icarus Online.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/God Eater 2 Rage Burst.lnk not found, skipping
+2020-06-16 21:21:17,507 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dota 2.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Outlast.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/State of Decay YearOne Survival Edition.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Rising StormRed Orchestra 2 Multiplayer.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Kingdom Classic.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Pinball Arcade.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Galactic Civilizations 2 Endless Universe.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Final Fantasy 7 Remake.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Fortnite.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grand Theft Auto 5.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/SOMA.lnk not found, skipping
+2020-06-16 21:21:17,508 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Contagion.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Warhammer 40000 Space Marine.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Splasher.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/FIFA 19.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Wasteland 2.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Xenonauts.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Toonstruck.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Star Wars 10Wing Alliance.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Subnautica.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/League of Legends.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Hearthstone.lnk not found, skipping
+2020-06-16 21:21:17,509 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Mount and Blade 2 Bannerlord.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Minecraft.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Fortnite.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Oxenfree.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grand Theft Auto San Andreas.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Red Faction Guerrilla ReMarstered.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Rocket League.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Wasteland 2 Directors Cut.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Full Throttle Remastered.lnk not found, skipping
+2020-06-16 21:21:17,510 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Shadow Warrior 2.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Ziggurat.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Everspace.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Overwatch.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/PLAYERUNKNOWNS BATTLEGROUNDS.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/World of Warcraft.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Tom Clancys Rainbow Six Siege.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Age of Wonders 3.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/BLACKHOLE.lnk not found, skipping
+2020-06-16 21:21:17,511 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Homefront The Revolution.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Millennium A New Hope.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Layers of Fear.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/How to Survive.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/F1 2017.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Star Wars 10Wing Special Edition.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Flame in the Flood.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Amnesia The Dark Descent.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grid 2.lnk not found, skipping
+2020-06-16 21:21:17,512 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Freespace 2.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Lego The Hobbit.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Borderlands The PreSequel.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Lost Castle.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Red Faction Armageddon.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Tekken 7.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Headsnatchers.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Star Wars TIE Fighter Special Edition.lnk not found, skipping
+2020-06-16 21:21:17,513 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Batman Arkham Knight.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Lara Croft GO.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Yet Another Zombie Defense HD.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Glass Masquerade.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Star Wars 10Wing vs TIE Fighter Balance of Power.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Shadow Warrior.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dead Rising 2 Off the Record.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Outlast.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/AER Memories of Old.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Mad Max.lnk not found, skipping
+2020-06-16 21:21:17,514 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/LEGO The Lord of the Rings.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dead Rising.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Borderlands 2.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Left 4 Dead 2.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Total War Warhammer.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Kings Bounty The Legend.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Warface.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Quake 3 Arena.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Call of Duty WWII.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Killing Floor.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Totally Accurate Battle Simulator.lnk not found, skipping
+2020-06-16 21:21:17,515 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Tiny Bang Story.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Assassins Creed 2.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/DiRT Rally.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Whispering Willows.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Viscera Cleanup Detail Shadow Warrior.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Payday 2.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/World War Z.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Metro 2033 1.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Tomb Raider.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Aviary Attorney.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Warhammer Vermintide 2.lnk not found, skipping
+2020-06-16 21:21:17,516 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Rayman Legends.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Subterrain.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Guns of Icarus Alliance.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Spec Ops The Line.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/A Story About My Uncle.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Darksiders.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Rebel Galaxy.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Torchlight.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Full Spectrum Warrior.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Oddworld Abes Oddysee.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Motorsport Manager.lnk not found, skipping
+2020-06-16 21:21:17,517 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Hacknet.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Fortified.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Outlast 2.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Company of Heroes 2.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/For Honor Public Test.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Warhammer Vermintide 2 Closed Test.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Quake 3 Team Arena.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Call to Arms.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Left 4 Dead.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Eastside Hockey Manager.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Grand Theft Auto San Andreas.lnk not found, skipping
+2020-06-16 21:21:17,518 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Amnesia A Machine for Pigs.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Rising Storm 2 Vietnam.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Kingdom Come Deliverance.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Killing Floor 2.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Ship Single Player.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dishonored.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Day of Infamy.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/AI War Fleet Command.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Darksiders 2 Deathinitive Edition.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Sega Bass Fishing.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/HackyZack.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Overcooked.lnk not found, skipping
+2020-06-16 21:21:17,519 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Sniper Elite 3.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Super Blood Hockey.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Full Spectrum Warrior Ten Hammers.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Batman Arkham City Game of the Year Edition.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Ship Murder Party.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Shadowrun Returns.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Frontlines Fuel of War.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Call of Duty WWII.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Darkness 2.lnk not found, skipping
+2020-06-16 21:21:17,520 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Overgrowth.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Assassins Creed 07.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Assassins Creed 07.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Enter the Gungeon.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Alien Isolation.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Quake Champions.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Titan Quest Anniversary Edition.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Call of Juarez Gunslinger.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Slayone.lnk not found, skipping
+2020-06-16 21:21:17,521 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Kings Bounty Armored Princess.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Foxhole.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/KING OF FIGHTERS 2002.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/IL2 Sturmovik 1946.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Crusader Kings 2.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Red Faction Guerrilla Steam Edition.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/GWENT The Witcher Card Game.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/This War of Mine.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Deus Ex Mankind Divided.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Metro 2033.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Dead Rising 2.lnk not found, skipping
+2020-06-16 21:21:17,522 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Holy Potatoes Were in Space.lnk not found, skipping
+2020-06-16 21:21:17,523 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Argo.lnk not found, skipping
+2020-06-16 21:21:17,523 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Animal Crossing New Horizons.lnk not found, skipping
+2020-06-16 21:21:17,523 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/FIFA 20.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Teamfight Tactics.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Apex Legends.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Resident Evil 3.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/HalfLife Alyx.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/SAMURAI SHODOWN NEOGEO COLLECTION.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/ARK Survival Evolved.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Mafia 3.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Geneshift Battle Royale Turbo.lnk not found, skipping
+2020-06-16 21:21:17,524 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/LEGO Ninjago Movie Video Game.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Hitman Absolution.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Turok.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Planet Coaster.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Niffelheim.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/My Friend Pedro.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/F1 2019.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Etherborn.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Deaths Gambit.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Battle Chasers Nightwar.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/198X.lnk not found, skipping
+2020-06-16 21:21:17,525 - gog_links - DEBUG -  /home/cwjungerius/projects/exports/games/Snake Pass.lnk not found, skipping
+2020-06-16 21:21:17,526 - gog_links - INFO - Adding lnks to shield complete
