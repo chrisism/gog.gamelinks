@@ -18,6 +18,7 @@ import urllib.request
 
 import subprocess, sys
 import logging
+from logging.handlers import TimedRotatingFileHandler
 
 # --- GLOBALS -----------------------------------------------------------------
 # Firefox user agents
@@ -26,25 +27,27 @@ USER_AGENT = 'Mozilla/5.0 (X11; Linux i586; rv:31.0) Gecko/20100101 Firefox/68.0
 
 logger = logging.getLogger('gog_links')
 logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler('gog_links.log')
-fh.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-fh.setFormatter(formatter)
-logger.addHandler(fh)
+
+handler = TimedRotatingFileHandler('gog_links.log', when='D',interval=1, backupCount=14)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 def main(argv):
+
     gog_path = None
     folder_style = "AEL"
     create_nfo_flag = False
     download_images_flag = False
     create_lnks_flag = False
     overwrite_files_flag = False
+    add_to_shield = False
 
     example = 'main.py -g <GOG path> -d <destination path>'
 
     try:
-        opts, args = getopt.getopt(argv,"hg:d:nois:l", \
-            ["gog=","destination=","nfo","overwrite","img","style=", "lnk"])
+        opts, args = getopt.getopt(argv,"hg:d:nois:la", \
+            ["gog=","destination=","nfo","overwrite","img","style=", "lnk", "add"])
     except getopt.GetoptError:
         print(example)
         sys.exit(2)
@@ -66,6 +69,8 @@ def main(argv):
             download_images_flag = True
         if opt in ("-l", "--lnk"):
             create_lnks_flag = True
+        if opt in ("-a", "--add"):
+            add_to_shield = True
         if opt in ("-o", "--overwrite"):
             overwrite_files_flag = True
 
@@ -95,11 +100,19 @@ def main(argv):
         create_lnks(games, output_folder, overwrite_files_flag)
         logger.info('Creating lnks complete')
 
-        logger.info('Adding lnks to shield')
+    if add_to_shield:
         #C:\Users\<USER>\AppData\Local\NVIDIA Corporation\Shield Apps
-        shield_folder = os.path.expanduser('~')
-        shield_folder = os.path.join(shield_folder, 'AppData', 'Local', 'NVIDIA Corporation','Shield Apps')
-        add_games_to_shield(games, output_folder, shield_folder, overwrite_files_flag)
+        user_folder = os.path.expanduser('~')
+        user_folder = os.path.join(user_folder, 'AppData', 'Local')
+        nvidia_folder = os.path.join(user_folder, 'NVIDIA', 'NvBackend')
+        shield_apps_folder = os.path.join(user_folder, 'NVIDIA Corporation', 'Shield Apps')
+
+        logger.info('Gathering already recognized games by nvidia')
+        recognized_games = load_games_from_geforce(nvidia_folder)
+        logger.info('Done gathering recognized games')
+
+        logger.info('Adding lnks to shield')
+        add_games_to_shield(games, recognized_games, output_folder, shield_apps_folder, overwrite_files_flag)
         logger.info('Adding lnks to shield complete')
 
 def load_games(path):
@@ -119,7 +132,7 @@ def load_games(path):
     #	ReleaseProperties (releaseKey	isDlc	isVisibleInLibrary	gameId)
 
     q = 'SELECT \
-            r.* \
+             u.userId, u.isHidden, r.* \
             ,p.id AS platformId \
             ,IFNULL(p.name, "gog") AS platform \
             ,gpt.value as title \
@@ -133,7 +146,8 @@ def load_games(path):
                 WHEN prk.externalId IS NOT NULL AND ie.id IS NULL THEN 0 \
                 ELSE 1 \
             END AS Installed \
-        FROM ReleaseProperties AS r \
+        FROM UserReleaseProperties AS u \
+            LEFT JOIN ReleaseProperties AS r ON u.releaseKey = r.releaseKey \
             LEFT JOIN ProductsToReleaseKeys AS prk ON r.releaseKey = prk.releaseKey \
             LEFT JOIN Platforms AS p ON INSTR(r.releaseKey, p.name) > 0 \
             LEFT JOIN GamePieces AS gpt ON r.releaseKey = gpt.releaseKey \
@@ -150,11 +164,17 @@ def load_games(path):
                 INNER JOIN GamePieceTypes gtypes6 ON gpo.gamePieceTypeId = gtypes6.Id AND gtypes6.type = \'sortingTitle\' \
             LEFT JOIN InstalledBaseProducts AS ig ON ig.productId = prk.gogId \
             LEFT JOIN InstalledExternalProducts AS ie ON ie.id = prk.externalId \
-        WHERE isVisibleInLibrary = 1 AND isDlc = 0'
+        WHERE isVisibleInLibrary = 1 AND isDlc = 0 AND u.isHidden = 0'
 
     games = []
     for row in c.execute(q):
         game = Game(row)
+        
+        if ' demo' in game.title.lower() or \
+            ' beta' in game.title.lower() or \
+            ' test' in game.title.lower():
+            continue
+
         games.append(game)
     
     conn.close()
@@ -320,11 +340,15 @@ def create_lnks(games, output_folder, overwrite_existing):
         logger.debug('  Powershell returned: {0:d}'.format(ec))
         logger.debug('  Created shortcut for game {} at {}'.format(game.title, game_path))
 
-def add_games_to_shield(games, output_folder, shield_folder, overwrite_existing):
+def add_games_to_shield(games, recognized_games, output_folder, shield_folder, overwrite_existing):
     
     lnk_folder = os.path.join(output_folder, 'games')
     img_folder = os.path.join(output_folder, 'boxfront')
     for game in games:
+
+        if game in recognized_games:
+            logger.warn('  Game {} already recognized. Skipping'.format(game.title))
+            continue
 
         img_path = os.path.join(img_folder, '{}.png'.format(game.sortTitle))
         game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.sortTitle))
@@ -351,6 +375,46 @@ def add_games_to_shield(games, output_folder, shield_folder, overwrite_existing)
             logger.error('(Exception) Object type "{}"'.format(type(ex)))
             logger.error('(Exception) Message "{0}"'.format(str(ex)))
     
+def load_games_from_geforce(shield_folder):
+    db_file = os.path.join(shield_folder, 'journalBS.main.xml')
+    xml_data = None 
+    
+    try:
+        xml_data = ET.parse(db_file)
+    except OSError:
+        logger.error('(OSError) Cannot read {} file'.format(db_file))
+    except IOError as e:
+        logger.error('(IOError) errno = {}'.format(e.errno))
+        if e.errno == errno.ENOENT: logger.error('(IOError) No such file or directory.')
+        logger.error('(IOError) Cannot read {} file'.format(db_file))
+        
+    if xml_data is None:
+        return []
+
+    games = []
+    
+    game_nodes =  xml_data.findall('.//Application/*')
+    logger.info('Nvidia has {} games recognized'.format(len(game_nodes)))
+
+    for game_xml in game_nodes:
+        
+        title_node = game_xml.find('DisplayName')
+        sort_title_node = game_xml.find('ShortName')
+        stream_supported_node = game_xml.find('IsStreamingSupported')
+
+        logger.debug('  Found Nvidia recognized game: {}'.format(title_node.text))
+        if stream_supported_node.text == '0':
+            logger.debug('  [SKIP] Streaming not supported. Skipping: {}'.format(title_node.text))
+            continue
+
+        game = Game(None)
+        game.title = title_node.text
+        game.sortTitle = sort_title_node.text.replace('_', ' ')
+        logger.debug('  [ADD] Streaming supported. Adding: {}'.format(title_node.text))
+        games.append(game)
+
+    return games
+
 def prettify(elem):
     """Return a pretty-printed XML string for the Element.
     """
@@ -395,10 +459,48 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
 
+def convert_romans_in_text(s):
+    words = s.split()
+    converted = []
+    for word in words:
+        num = romanToInt(word)
+        if num > 0:
+            converted.append(str(num))
+        else:
+            converted.append(word)
+    return ' '.join(converted)
+
+def romanToInt(s):
+    """
+    :type s: str
+    :rtype: int
+    """
+    roman = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900}
+    
+    for c in s:
+        if not c in roman:
+            return -1
+
+    i = 0
+    num = 0
+    while i < len(s):
+        if i+1<len(s) and s[i:i+2] in roman:
+            num+=roman[s[i:i+2]]
+            i+=2
+        else:
+            #print(i)
+            num+=roman[s[i]]
+            i+=1
+    
+    return num
+
 class Game(object):
 
     def __init__(self, data_row):
         
+        if data_row is None:
+            return 
+
         self.id = data_row['releaseKey']
         self.game_id = data_row['gameId']
         
@@ -440,6 +542,18 @@ class Game(object):
         if media and 'videos' in media:
             for videoMedia in media['videos']:
                 self.videos.append(Video(videoMedia))
+        
+        # hack
+        if '10Wing' in self.sortTitle:
+            self.sortTitle = self.sortTitle.replace('10Wing', 'XWing')
+
+    def __eq__(self, other):
+        if self.sortTitle.lower() == other.sortTitle.lower():
+            return True
+        
+        converted_lh = convert_romans_in_text(self.sortTitle.upper())
+        converted_rh = convert_romans_in_text(other.sortTitle.upper())
+        return converted_lh == converted_rh
 
 class Video(object):
 
