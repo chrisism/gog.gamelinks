@@ -564,7 +564,7 @@ class Video(object):
 
     def get_url(self):
         if self.provider == 'youtube':
-            return 'https://youtube.com/embed/{}'.format(self.videoId)
+            return 'http://www.youtube.com/watch?v={}'.format(self.videoId)
 
         return self.videoId
 
