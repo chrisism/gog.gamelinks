@@ -7,6 +7,7 @@ import errno
 import os
 from shutil import copyfile
 import pprint
+import string
 
 from datetime import datetime
 import xml.etree.ElementTree as ET
@@ -79,7 +80,14 @@ def main(argv):
         sys.exit(2)
 
     # load games from GOG db
-    games = load_games(gog_path)
+    try:
+        games = load_games(gog_path)
+    except Exception as ex:
+        logger.error('(Exception) Object type "{}"'.format(type(ex)))
+        logger.error('(Exception) Message "{}"'.format(str(ex)))
+        logger.error('Could not load games from db')
+        return
+    
     logger.info('loaded {} games'.format(len(games)))
 
     # create NFO files
@@ -186,7 +194,7 @@ def create_nfos(games, output_folder, overwrite_existing):
         os.makedirs(nfo_folder)
     for game in games:
 
-        doc_path = os.path.join(nfo_folder, '{}.nfo'.format(game.sortTitle))
+        doc_path = os.path.join(nfo_folder, '{}.nfo'.format(game.fileTitle))
         if not overwrite_existing and os.path.exists(doc_path):
             continue
 
@@ -246,8 +254,8 @@ def download_images(games, output_folder, overwrite_existing, folder_style):
 def download_images_ael_style(games, output_folder, overwrite_existing):   
 
     snaps_folder  = os.path.join(output_folder, 'snaps')
-    fanart_folder = os.path.join(output_folder, 'fanart')
-    cover_folder  = os.path.join(output_folder, 'boxfront')
+    fanart_folder = os.path.join(output_folder, 'fanarts')
+    cover_folder  = os.path.join(output_folder, 'boxfronts')
     icon_folder   = os.path.join(output_folder, 'icons')
 
     if not os.path.exists(snaps_folder):
@@ -261,7 +269,7 @@ def download_images_ael_style(games, output_folder, overwrite_existing):
 
     for game in games:
 
-        file_name   = '{}.png'.format(game.sortTitle)
+        file_name   = '{}.png'.format(game.fileTitle)
         dest_icon   = os.path.join(icon_folder, file_name)
         dest_fanart = os.path.join(fanart_folder, file_name)
         dest_cover  = os.path.join(cover_folder, file_name)
@@ -284,10 +292,10 @@ def download_images_kodi_style(games, output_folder, overwrite_existing):
     
     for game in games:
 
-        dest_icon   = os.path.join(output_folder, game.sortTitle, 'icon.png')
-        dest_fanart = os.path.join(output_folder, game.sortTitle, 'fanart.png')
-        dest_cover  = os.path.join(output_folder, game.sortTitle, '{}.tbn'.format(game.sortTitle))
-        dest_snap   = os.path.join(output_folder, game.sortTitle, 'snap.png')
+        dest_icon   = os.path.join(output_folder, game.fileTitle, 'icon.png')
+        dest_fanart = os.path.join(output_folder, game.fileTitle, 'fanart.png')
+        dest_cover  = os.path.join(output_folder, game.fileTitle, '{}.tbn'.format(game.fileTitle))
+        dest_snap   = os.path.join(output_folder, game.fileTitle, 'snap.png')
     
         if game.cover is not None and (not os.path.exists(dest_cover) or overwrite_existing):
             net_download_img(game.cover, dest_cover)
@@ -305,7 +313,7 @@ def download_images_kodi_style(games, output_folder, overwrite_existing):
         if len(game.snaps) > 1:
             i = 1
             for snap in game.snaps[1:]:
-                snap_path = os.path.join(output_folder, game.sortTitle, 'extrasnaps', 'snap{}.png'.format(str(i)))
+                snap_path = os.path.join(output_folder, game.fileTitle, 'extrasnaps', 'snap{}.png'.format(str(i)))
                 if not os.path.exists(snap_path) or overwrite_existing:
                     net_download_img(snap, snap_path)
                     logger.debug('  Downloaded snap#{} image for game {}'.format(i, game.title))
@@ -322,7 +330,7 @@ def create_lnks(games, output_folder, overwrite_existing):
     lnk_folder = os.path.join(output_folder, 'games')
     for game in games:
 
-        game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.sortTitle))
+        game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.fileTitle))
         if not overwrite_existing and os.path.exists(game_path):
             continue
         
@@ -343,21 +351,21 @@ def create_lnks(games, output_folder, overwrite_existing):
 def add_games_to_shield(games, recognized_games, output_folder, shield_folder, overwrite_existing):
     
     lnk_folder = os.path.join(output_folder, 'games')
-    img_folder = os.path.join(output_folder, 'boxfront')
+    img_folder = os.path.join(output_folder, 'boxfronts')
     for game in games:
 
         if game in recognized_games:
             logger.warn('  Game {} already recognized. Skipping'.format(game.title))
             continue
 
-        img_path = os.path.join(img_folder, '{}.png'.format(game.sortTitle))
-        game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.sortTitle))
+        img_path = os.path.join(img_folder, '{}.png'.format(game.fileTitle))
+        game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.fileTitle))
         if not os.path.exists(game_path):
             logger.debug(' {} not found, skipping'.format(game_path))
             continue
         
-        shield_lnk = os.path.join(shield_folder,'{}.lnk'.format(game.sortTitle))
-        shield_img_folder = os.path.join(shield_folder, 'StreamingAssets', game.sortTitle) 
+        shield_lnk = os.path.join(shield_folder,'{}.lnk'.format(game.fileTitle))
+        shield_img_folder = os.path.join(shield_folder, 'StreamingAssets', game.fileTitle) 
         shield_img = os.path.join(shield_img_folder, 'box-art.png')
         if not overwrite_existing and os.path.exists(shield_lnk):
             continue
@@ -366,9 +374,9 @@ def add_games_to_shield(games, recognized_games, output_folder, shield_folder, o
             if not os.path.exists(shield_img):
                 os.makedirs(shield_img_folder)
 
-            logger.debug('Copying lnk file for {} to {}'.format(game.sortTitle, shield_lnk))
+            logger.debug('Copying lnk file for {} to {}'.format(game.fileTitle, shield_lnk))
             copyfile(game_path, shield_lnk)
-            logger.debug('Copying boxart for {} to {}'.format(game.sortTitle, shield_img))
+            logger.debug('Copying boxart for {} to {}'.format(game.fileTitle, shield_img))
             
             copyfile(img_path, shield_img)
         except Exception as ex:
@@ -410,6 +418,7 @@ def load_games_from_geforce(shield_folder):
         game = Game(None)
         game.title = title_node.text
         game.sortTitle = sort_title_node.text.replace('_', ' ')
+        game.fileTitle = sort_title_node.text.replace('_', ' ')
         logger.debug('  [ADD] Streaming supported. Adding: {}'.format(title_node.text))
         games.append(game)
 
@@ -494,6 +503,17 @@ def romanToInt(s):
     
     return num
 
+# Given a text clean it so the cleaned string can be used as a filename.
+# 1) Convert any non-printable character into ' '
+# 2) Remove special chars
+# 3) (DISABLED) Convert spaces ' ' into '_'
+def text_str_to_filename_str(title_str):
+    not_valid_chars = '\',"*/:<>?\\|'
+    cleaned_str_1 = ''.join([i if i in string.printable else ' ' for i in title_str])
+    cleaned_str_2 = ''.join([i if i not in not_valid_chars else '' for i in cleaned_str_1])
+    #cleaned_str_3 = cleaned_str_2.replace(' ', '_')
+    return cleaned_str_2
+
 class Game(object):
 
     def __init__(self, data_row):
@@ -505,6 +525,7 @@ class Game(object):
         self.game_id = data_row['gameId']
         
         self.title = json.loads(data_row['title'])['title'] if data_row['title'] else 'Unknown'
+        self.fileTitle = text_str_to_filename_str(self.title)
         self.sortTitle = json.loads(data_row['sort'])['title'] if data_row['sort'] else self.title
         self.summary = json.loads(data_row['summary'])['summary'] if data_row['summary'] else ''
 
@@ -526,17 +547,16 @@ class Game(object):
             self.releaseDate = datetime.utcfromtimestamp(self.releaseDateTimestamp) 
         else: self.releaseDate = None
 
-        self.fanart = images['background'].replace('\\','') if images['background'] is not None else None
-        self.icon   = images['squareIcon'].replace('\\','') if images['squareIcon'] is not None else None
-        self.cover  = images['verticalCover'].replace('\\','') if images['verticalCover'] is not None else None
- 
+        self.fanart = images['background'].replace('\\','').replace('.webp', '.png') if images['background'] is not None else None
+        self.icon   = images['squareIcon'].replace('\\','').replace('.webp', '.png') if images['squareIcon'] is not None else None
+        self.cover  = images['verticalCover'].replace('\\','').replace('.webp', '.png') if images['verticalCover'] is not None else None
         self.snaps = []
         if media and 'screenshots' in media:
             for img in media['screenshots']:
                 self.snaps.append(img
                     .replace('\\','')
                     .replace('{formatter}', '')
-                    .replace('{ext}', 'jpg'))
+                    .replace('{ext}', 'png'))
 
         self.videos = []
         if media and 'videos' in media:
@@ -544,8 +564,8 @@ class Game(object):
                 self.videos.append(Video(videoMedia))
         
         # hack
-        if '10Wing' in self.sortTitle:
-            self.sortTitle = self.sortTitle.replace('10Wing', 'XWing')
+        if '10Wing' in self.fileTitle:
+            self.fileTitle = self.fileTitle.replace('10Wing', 'XWing')
 
     def __eq__(self, other):
         if self.sortTitle.lower() == other.sortTitle.lower():
