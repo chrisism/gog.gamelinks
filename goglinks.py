@@ -354,19 +354,24 @@ def add_games_to_shield(games, recognized_games, output_folder, shield_folder, o
     img_folder = os.path.join(output_folder, 'boxfronts')
     for game in games:
 
-        if game in recognized_games:
-            logger.warn('  Game {} already recognized. Skipping'.format(game.title))
-            continue
-
         img_path = os.path.join(img_folder, '{}.png'.format(game.fileTitle))
         game_path = os.path.join(lnk_folder, '{}.lnk'.format(game.fileTitle))
+
+        shield_lnk = os.path.join(shield_folder,'{}.lnk'.format(game.fileTitle))
+        shield_img_folder = os.path.join(shield_folder, 'StreamingAssets', game.fileTitle) 
+        shield_img = os.path.join(shield_img_folder, 'box-art.png')
+
+        if game in recognized_games:
+            logger.warn('  Game {} already recognized. Skipping'.format(game.title))
+            if os.path.exists(shield_lnk):
+                logger.warn('  Removing lnk file for game {} from Shield'.format(game.title))
+                os.remove(shield_lnk)
+            continue
+
         if not os.path.exists(game_path):
             logger.debug(' {} not found, skipping'.format(game_path))
             continue
         
-        shield_lnk = os.path.join(shield_folder,'{}.lnk'.format(game.fileTitle))
-        shield_img_folder = os.path.join(shield_folder, 'StreamingAssets', game.fileTitle) 
-        shield_img = os.path.join(shield_img_folder, 'box-art.png')
         if not overwrite_existing and os.path.exists(shield_lnk):
             continue
 
